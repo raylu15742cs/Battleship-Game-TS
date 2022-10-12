@@ -1,4 +1,5 @@
-{
+{ 
+  "main" : "script.ts",
   "devDependencies": {
     "@types/jasmine": "^4.3.0",
     "jasmine-core": "^4.4.0",
@@ -14,6 +15,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./dist/script/js",
+    "dev": "nodemon script.ts"
   }
 }
