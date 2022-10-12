@@ -1,9 +1,24 @@
-console.log("hi")
-
 const gamecontainer = document.getElementById("gameboard")
-let title = document.createElement("div")
-title.innerHTML = "hi"
 
-gamecontainer?.appendChild(title)
+// storage of ships 
+function hello() {
+    console.log( "hi")
+}
+hello();
+// create boards
 
+// create player ships
 
+// create computer ships
+
+// computer hit
+
+// test ship location
+
+//hit tracker
+
+//sunk tracker
+
+// hitback
+
+// gameover
