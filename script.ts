@@ -257,8 +257,7 @@ function random() {
 
 let taken: number[] = []
 
-
-function hitback(e?:any) {
+function hitback() {
   if(shipcount == 5) {
     let currentrandom = random()
     if(taken.includes(currentrandom)) {
@@ -273,29 +272,27 @@ function hitback(e?:any) {
                 `${target.innerHTML.substring(9, 11)}`
             );
             if(shiptarget != null) {
-            shiptarget.click();
+                shiptarget.click();
             }
             //console.log(target.innerHTML.substring(9,11));
             } else {
             target.click();
-            }
-        } else {
-            let target = document.getElementById(`Human${currentrandom}`);
-            if(target != null) {
+            }   
+        }
+      } else {
+        let target = document.getElementById(`Human${currentrandom}`);
+        if(target != null) {
             if (target.innerHTML != null) {
             let shiptarget = document.getElementById(
                 `${target.innerHTML.substring(9, 11)}`
             );
-            if(shiptarget != null) {
+            if(shiptarget!=null){
                 shiptarget.click();
-                }
             }
-            if(target != null) {
+            }
             target.click();
-            }
         }
-    }   
-    }
+        }
     }
   }
 }

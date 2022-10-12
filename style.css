@@ -1,0 +1,96 @@
+h1 {
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 7rem;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header {
+    height: 10vh;
+    margin: 0;
+}
+.rules {
+    padding-top: 3vh;
+    height: 50vh;
+    text-align: center;
+}
+.footer{
+    height: 1vh;
+    text-align: center;
+}
+body {
+    padding: 0 20vw;
+}
+
+
+
+/* Rules for the game */
+#frominside {
+    background-color: red;
+    height: 30px;
+    width: auto;
+}
+
+.hits {
+    background-color: royalblue;
+}
+
+.bluetime{
+    background-color: black;
+}
+.blackhover {
+    background-color: yellow;
+}
+
+.playerhit {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sunk {
+    background-color: red;
+}
+
+/* Rules for the Board */ 
+
+#gameboard {
+    display: flex;
+    justify-content: center;
+    padding-top: 4vh;
+    height: 29.5vh;
+}
+
+#Human, #Computer, #gameboard{
+    display: flex;
+}
+
+#Human {
+    margin-right: 30px;
+}
+.box,.ships {
+    border: 2px solid black;
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+}
+
+.ships {
+    margin-left: 2px;
+}
+
+.playership {
+    height: 30px;
+    width: auto;
+}
+.playershipcolor {
+    background-color: black;
+}
